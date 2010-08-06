@@ -1,0 +1,43 @@
+<p>
+  <b>Asin:</b>
+  <%=h @dvd.ASIN %>
+</p>
+
+<p>
+  <b>Detailspageurl:</b>
+  <%=h @dvd.detailsPageURL %>
+</p>
+
+<p>
+  <b>Actor:</b>
+  <%=h @dvd.actor %>
+</p>
+
+<p>
+  <b>Director:</b>
+  <%=h @dvd.director %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @dvd.title %>
+</p>
+
+<p>
+  <b>Genre:</b>
+  <%=h @dvd.genre %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%=h @dvd.image %>
+</p>
+
+<p>
+  <b>Dateadded:</b>
+  <%=h @dvd.dateadded %>
+</p>
+
+
+<%= link_to 'Edit', edit_dvd_path(@dvd) %> |
+<%= link_to 'Back', dvds_path %>

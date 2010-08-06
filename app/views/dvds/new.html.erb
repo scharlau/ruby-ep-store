@@ -1,0 +1,43 @@
+<h1>New dvd</h1>
+
+<% form_for(@dvd) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :ASIN %><br />
+    <%= f.text_field :ASIN %>
+  </p>
+  <p>
+    <%= f.label :detailsPageURL %><br />
+    <%= f.text_field :detailsPageURL %>
+  </p>
+  <p>
+    <%= f.label :actor %><br />
+    <%= f.text_field :actor %>
+  </p>
+  <p>
+    <%= f.label :director %><br />
+    <%= f.text_field :director %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :genre %><br />
+    <%= f.text_field :genre %>
+  </p>
+  <p>
+    <%= f.label :image %><br />
+    <%= f.text_field :image %>
+  </p>
+  <p>
+    <%= f.label :dateadded %><br />
+    <%= f.text_field :dateadded %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', dvds_path %>

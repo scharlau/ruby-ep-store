@@ -114,3 +114,133 @@ Migrating to CreateDvds (20100806124639)
   [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
   [4;35;1mDvd Create (0.0ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'The Punk Rock Movie [DVD]', NULL, 'B0017T1NTU', NULL, NULL, 'http://www.amazon.co.uk/Punk-Rock-Movie-DVD/dp/B0017T1NTU%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0017T1NTU', NULL, '2010-08-06 14:33:10')[0m
   [4;36;1mSQL (78.1ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-06 15:36:35) [GET]
+
+ActionController::RoutingError (No route matches "/ruby-ep-store/dvds" with {:method=>:get}):
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-06 15:36:40) [GET]
+
+ActionController::RoutingError (No route matches "/ruby-ep-store/dvd" with {:method=>:get}):
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-06 15:36:44) [GET]
+
+ActionController::RoutingError (No route matches "/ruby-ep-store/" with {:method=>:get}):
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-06 15:36:52) [GET]
+
+ActionController::RoutingError (No route matches "/dvd" with {:method=>:get}):
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-06 15:36:57) [GET]
+
+ActionController::RoutingError (No route matches "/dvd/index" with {:method=>:get}):
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DvdsController#show (for 127.0.0.1 at 2010-08-06 15:37:05) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;35;1mDvd Load (15.6ms)[0m   [0mSELECT * FROM `dvds` WHERE (`dvds`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Dvd with ID=index):
+  app/controllers/dvds_controller.rb:16:in `show'
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby-186/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby-186/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.9ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DvdsController#index (for 127.0.0.1 at 2010-08-06 15:37:13) [GET]
+  [4;36;1mDvd Load (0.0ms)[0m   [0;1mSELECT * FROM `dvds` [0m
+Rendering template within layouts/dvds
+Rendering dvds/index
+  [4;35;1mDvd Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `dvds`[0m
+Completed in 750ms (View: 578, DB: 0) | 200 OK [http://localhost/dvds/]

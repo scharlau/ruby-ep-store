@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ASIN: MyString
+  detailsPageURL: MyString
+  actor: MyString
+  director: MyString
+  title: MyString
+  genre: MyString
+  image: MyString
+  dateadded: MyString
+
+two:
+  ASIN: MyString
+  detailsPageURL: MyString
+  actor: MyString
+  director: MyString
+  title: MyString
+  genre: MyString
+  image: MyString
+  dateadded: MyString
