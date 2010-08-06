@@ -1,0 +1,116 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (156.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (234.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDvds (20100806124639)
+  [4;36;1mSQL (78.1ms)[0m   [0;1mCREATE TABLE `dvds` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `ASIN` varchar(255), `detailsPageURL` varchar(255), `actor` varchar(255), `director` varchar(255), `title` varchar(255), `genre` varchar(255), `image` varchar(255), `dateadded` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100806124639')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `dvds`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `dvds`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `dvds`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES('--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Director \n __val__: Kazuhisa Takenouchi\n- !ruby/object:Amazon::AWS::AWSObject::Director \n __val__: Leiji Matsumoto\n', '2010-08-06 14:09:17', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: Daft Punk - Interstella 5555 [DVD] [2003]\n', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-06 14:09:17')[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDvd Create (0.0ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:09:17', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: Punk\'d - Series 1 - Complete [DVD]\n', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-06 14:09:17')[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES('--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Director \n __val__: Don Letts\n', '2010-08-06 14:09:17', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: \"Punk: Attitude [DVD]\"\n', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-06 14:09:17')[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDvd Create (0.0ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES('--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Director \n __val__: Daft Punk\n', '2010-08-06 14:09:17', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: Daft Punk\'s Electroma [DVD] [2006]\n', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-06 14:09:17')[0m
+  [4;36;1mSQL (31.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:09:17', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: Best Of CM Punk [DVD]\n', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-06 14:09:17')[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDvd Create (15.6ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:09:17', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: Desert Punk Collection [DVD] [2004]\n', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-06 14:09:17')[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:09:17', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: Punk\'d - Series 2 - Complete [DVD]\n', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-06 14:09:17')[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDvd Create (0.0ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES('--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Director \n __val__: Susan Dynner\n', '2010-08-06 14:09:17', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: Punk\'s Not Dead [DVD]\n', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-06 14:09:17')[0m
+  [4;36;1mSQL (31.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:09:17', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: The Jam - Punk Icons [DVD] [2006]\n', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-06 14:09:17')[0m
+  [4;35;1mSQL (31.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDvd Create (0.0ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES('--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Director \n __val__: Don Letts\n', '2010-08-06 14:09:17', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: The Punk Rock Movie [DVD]\n', NULL, NULL, NULL, NULL, NULL, NULL, '2010-08-06 14:09:17')[0m
+  [4;36;1mSQL (31.2ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mMysql::Error: Data too long for column 'detailsPageURL' at row 1: INSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:29:03', '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::Title \n __val__: Daft Punk - Interstella 5555 [DVD] [2003]\n', NULL, '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::ASIN \n __val__: B0000DBK9X\n', NULL, NULL, '--- !seq:Amazon::AWS::AWSArray \n- !ruby/object:Amazon::AWS::AWSObject::DetailPageURL \n __val__: http://www.amazon.co.uk/Daft-Punk-Interstella-5555-DVD/dp/B0000DBK9X%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0000DBK9X\n', NULL, '2010-08-06 14:29:03')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDvd Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `dvds`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'Daft Punk - Interstella 5555 [DVD] [2003]', NULL, 'B0000DBK9X', NULL, NULL, 'http://www.amazon.co.uk/Daft-Punk-Interstella-5555-DVD/dp/B0000DBK9X%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0000DBK9X', NULL, '2010-08-06 14:33:10')[0m
+  [4;35;1mSQL (31.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDvd Create (0.0ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'Punk\'d - Series 1 - Complete [DVD]', NULL, 'B0002GZAC0', NULL, NULL, 'http://www.amazon.co.uk/Punkd-Complete-DVD-Ashton-Kutcher/dp/B0002GZAC0%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0002GZAC0', NULL, '2010-08-06 14:33:10')[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'Punk: Attitude [DVD]', NULL, 'B0009PZ87G', NULL, NULL, 'http://www.amazon.co.uk/Punk-Attitude-DVD-Henry-Rollins/dp/B0009PZ87G%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0009PZ87G', NULL, '2010-08-06 14:33:10')[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDvd Create (0.0ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'Daft Punk\'s Electroma [DVD] [2006]', NULL, 'B000WC4AT8', NULL, NULL, 'http://www.amazon.co.uk/Daft-Punks-Electroma-Peter-Hurteau/dp/B000WC4AT8%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000WC4AT8', NULL, '2010-08-06 14:33:10')[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'Best Of CM Punk [DVD]', NULL, 'B000YQAN52', NULL, NULL, 'http://www.amazon.co.uk/Best-CM-Punk-DVD-Cm/dp/B000YQAN52%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000YQAN52', NULL, '2010-08-06 14:33:10')[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDvd Create (0.0ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'Desert Punk Collection [DVD] [2004]', NULL, 'B003QHVKTY', NULL, NULL, 'http://www.amazon.co.uk/Desert-Punk-Collection-DVD/dp/B003QHVKTY%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB003QHVKTY', NULL, '2010-08-06 14:33:10')[0m
+  [4;36;1mSQL (31.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'Punk\'d - Series 2 - Complete [DVD]', NULL, 'B0006L7O8Y', NULL, NULL, 'http://www.amazon.co.uk/Punkd-Complete-DVD-Ashton-Kutcher/dp/B0006L7O8Y%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0006L7O8Y', NULL, '2010-08-06 14:33:10')[0m
+  [4;35;1mSQL (31.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDvd Create (0.0ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'Punk\'s Not Dead [DVD]', NULL, 'B001ASPO70', NULL, NULL, 'http://www.amazon.co.uk/Punks-Not-Dead-Susan-Dynner/dp/B001ASPO70%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001ASPO70', NULL, '2010-08-06 14:33:10')[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDvd Create (0.0ms)[0m   [0;1mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'The Jam - Punk Icons [DVD] [2006]', NULL, 'B000CRSF7G', NULL, NULL, 'http://www.amazon.co.uk/Jam-Punk-Icons-DVD/dp/B000CRSF7G%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000CRSF7G', NULL, '2010-08-06 14:33:10')[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDvd Create (0.0ms)[0m   [0mINSERT INTO `dvds` (`director`, `updated_at`, `title`, `actor`, `ASIN`, `genre`, `dateadded`, `detailsPageURL`, `image`, `created_at`) VALUES(NULL, '2010-08-06 14:33:10', 'The Punk Rock Movie [DVD]', NULL, 'B0017T1NTU', NULL, NULL, 'http://www.amazon.co.uk/Punk-Rock-Movie-DVD/dp/B0017T1NTU%3FSubscriptionId%3D1QHTGHD6D2FH3K1XC382%26tag%3Dcaliban-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0017T1NTU', NULL, '2010-08-06 14:33:10')[0m
+  [4;36;1mSQL (78.1ms)[0m   [0;1mCOMMIT[0m
